@@ -37,3 +37,12 @@
     .container {
       width: 1170px;
         }}
+
+        header {
+          padding: 20px 0;
+        }
+        header a {
+          font-size: 20px;
+          font-weight: 600;
+          color: var(--black);
+        }
