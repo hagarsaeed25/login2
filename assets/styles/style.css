@@ -47,18 +47,14 @@
     }
     section .container{
       width: 100%;
+      display: flex;
     }
     section .form {
-      width: 35%;
+      width: 45%;
       padding: 41px;
       border: 0.5px solid var(--stroke);
       border-radius: 10px;
-      flex-wrap: wrap;
-    }
-    @media (max-width:992px) {
-      section .form{
-        width: 50%;
-      }
+      margin-left: 40px;
     }
     section .welcome-message {
       display: block;
@@ -72,7 +68,7 @@
       font-size: 31px;
       line-height:46.5px;
     }
-   .container .form .desription{
+   .container .form .description{
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
@@ -125,3 +121,22 @@
     font-size: 16px;
     font-weight: 500;
    }
+   section .form .have-an-accout{
+    font-weight:300;
+    font-size: 16px;
+    line-height: 24px;
+   }
+   section .form .have-an-accout a{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color:var(--black);
+   }
+   section .image {
+    width: 50%;
+  }
+  @media (max-width: 991px) {
+    section .image {
+      display: none;
+    }
+  }
