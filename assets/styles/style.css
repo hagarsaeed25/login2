@@ -49,10 +49,16 @@
       width: 100%;
     }
     section .form {
-      width: 50%;
+      width: 35%;
       padding: 41px;
       border: 0.5px solid var(--stroke);
       border-radius: 10px;
+      flex-wrap: wrap;
+    }
+    @media (max-width:992px) {
+      section .form{
+        width: 50%;
+      }
     }
     section .welcome-message {
       display: block;
@@ -71,4 +77,51 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 40px;
+   }
+   section form {
+    width: 100%;
+   }
+   section form label{
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+   }
+   section form input{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 0.6px solid var(--input-strok);
+    border-radius: 4px;
+   }
+   section form input::placeholder{
+    font-weight:400;
+    font-size: 13px;
+    line-height: 21px;
+    color: var(--gray);
+   }
+   section form .options{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 20px;
+   }
+   .options input{
+    display: inline;
+    width: fit-content;
+    margin: 0;
+   }
+   .options label{
+    display: inline;
+   }
+   .options a{
+    font-weight: 300;
+    font-size: 12px;
+    line-height:18px;
+    color: var(--gray);
+   }
+   section form .submit-btn{
+    color: var(--white);
+    background-color: var(--black);
+    font-size: 16px;
+    font-weight: 500;
    }
